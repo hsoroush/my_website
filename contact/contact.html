@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hadi's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+</head>
+<body>
+   <header>
+       <a class="navicon" href="javascript:;" onclick="navFunction()">&#9776;</a>
+       <h1><strong style="color: red">Power</strong>coders</h1>         
+       <div id="stickyHeader">
+          <h3>Hadi Soroush</h3>
+          <span><q>I do programming, why i love it</q></span>
+       </div>
+   </header>
+   <nav class="navbar" id="navbarid">
+       <ul>
+           <li><a href="../index.html">Home</a></li>
+           <li><a href="../about/about.html">About</a></li>
+           <li><a class="selected" href="contact.html">Contact</a></li>
+           <li><a href="../projects/project.html">Projects</a></li>
+       </ul>
+   </nav>
+   <div id="main">
+     <div class="container">
+        <div class="prtcl-row">
+            <div class="col s12">
+                <h2>Contact Page</h2>
+            </div>
+        </div>
+         <div class="prtcl-row">                  
+               <div class="col s12 m6 l6">     
+                         
+                    <!---------------------- content  ---------------------->
+
+                    <div class="form_content">
+                        <h3 class="form_titel">I would be glad to hear from you</h3>
+                        <form class="form">
+                            <input type="text" name="first_name" id="first_name" placeholder="Firstname" autocomplete="off">
+                            <input type="text" name="last_name" id="last_name" placeholder="Lastname" autocomplete="off">
+                            <input type="email" name="email" id="email" placeholder="Email" autocomplete="off">
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                            <input type="submit" value="Submit" name="submit">
+                        </form>
+                    </div>
+               </div>  
+             <!---------------------- aside  ---------------------->
+              <div class="col s12 m6 l6">
+                  <div class="take_top_padding">
+                <!-- to show a map -->
+                 <h3>Our current address is here:</h3>
+                 <iframe class="mediaclass" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.340945791516!2d8.516227014987408!3d47.38578021120019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a3f03d60779%3A0xa6bdd026bc1329f8!2sGeroldstrasse+33%2C+8005+Z%C3%BCrich!5e0!3m2!1sde!2sch!4v1507448298483" width="360" height="260" frameborder="0" style="border:0" allowfullscreen></iframe>  
+                  </div>
+              </div>
+              
+         </div><!-- end of partcl-row -->
+       </div><!-- end of container -->
+      <hr>
+   </div><!-- end of main -->
+   <footer style="text-align: center">
+       <span>
+           Copyright 2017
+       </span>
+   </footer>
+   <!------------------------ call to javascript file   ---------------------->
+   <script type="text/javascript" src="../js/style.js" ></script>    
+</body>
+</html>

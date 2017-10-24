@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400|Roboto:300,400,700');
+@import url('grid.css');
+
+@import url('../font/font-awesome/css/font-awesome.min.css');
+
+html{
+    height: 100%;
+    font-size: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    min-height: 100%;
+    
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #e6e6ff;
+    font-size: 1rem;
+}
+
+header, .navbar, #main, footer{
+    padding: 0 10px;    
+}
+
+header, footer{
+    overflow: hidden;
+}
+
+
+h1, h2, h3{
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    margin: 0 0;
+}
+
+p{
+    font-family:serif;
+    font-weight: 400; 
+}
+
+hr{
+    clear: both;
+}
+
+/*   /////////////////////             header part              */
+
+header{
+    background-color: #4d0026;
+    color: white;
+}
+
+#stickyHeader{
+    margin: auto;
+    text-align: center;
+}
+header h1{
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+#stickyHeader h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: 2px 1px 3px #fff;    
+}
+
+
+ 
+
+/*  ////////////         navigation part       */
+.navbar{
+    background-color: #808000;
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+}
+
+.navbar ul{
+    list-style-type: none;
+    /* overwrite the browser value */
+    margin-top: 12px;
+    padding-left: 0;
+    /* end of browser code */
+}
+
+.navbar ul{
+    margin-top:15px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    
+}
+
+.navbar a{
+    background-color: white;
+    text-decoration: none;
+    padding: 0.2rem;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+     border-radius: 3px;
+}
+
+.navbar a.selected{
+    background-color: #990000;
+    color: #fff;
+    padding: 0.2rem;
+}
+
+
+
+a.navicon{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px 3px 0 0; 
+    float: right;
+}
+a.navicon:hover{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+a:visited{
+   
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    color: darkred;
+}
+
+/* ////////////////////////////// main part ////////////////////////////////// */
+
+#main{
+    /* bcz of fixed footer*/
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.take_top_padding{
+    padding-top: 20px !important;
+}
+
+/*.aside, .content{
+    width: 100%;
+    padding: 10px;
+}
+
+.content{
+    padding-top: 2em;
+}*/
+
+.underline{
+    border-bottom: 2px solid #001a00; 
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+
+
+.image_circle{
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius: 5px;
+}
+
+
+/*    ////////////////////////////                    icons part  in the index page             */
+
+
+
+.icon{
+    clear: both;
+    /*border: 1px red solid;*/
+    overflow: hidden;
+    padding: 0.3em;
+}
+
+.icon_col{
+    width: 100%;
+    text-align: center;
+    margin: 0 0.3em 0.3em 0;
+    padding: 0.3em;
+    float: left;
+    background-color: #e6e6ff;
+    border: 1px solid #000080;
+    position: relative;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    
+}
+.icon_col span{
+    display: block;
+}
+
+.icon_col i{
+    color: darkred;
+}
+
+.icon_col a{
+    display: block;
+    text-decoration: none;
+}
+
+.icon_col:hover{
+    background-color: #ccccff;
+    opacity:1;
+    box-shadow: 2px 2px 5px 1px #999999; 
+        
+}
+
+/*     /////////////////////////////////                          media css part           */
+.mediaclass{
+    width: 260px;
+    height: auto;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    padding-top: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: #f2f2f2;
+    clear: both;
+    text-align: center;
+}
+
+/*                              media query for Tablet  */
+@media screen and (min-width:600px){
+    p{
+        font-size: 1.2rem;
+    }
+    .icon_col{
+        min-width:75px;
+        max-width: 112.5px; 
+    }
+    
+    .aside{
+        width: 40%;
+        float: left;
+    }
+    .content{
+        width: 60%;
+        float: left;
+    }
+    /* do not show nav icon in the header bcz the width is more than 600 px */
+    a.navicon {display: none;}  
+}
+
+/* //////////////////////////////   media query for Desktop  */ 
+
+@media screen and (min-width:900px){
+    p{
+        font-size: 1.3rem;
+    }
+}
+
+
+/* ////////////////////////                  media queriy for responsive links */
+@media screen and (max-width:600px){
+    .navbar ul li{display: none;}
+    a.navicon {display: inline-block;
+    
+    }
+}
+
+@media screen and (max-width:600px){ 
+
+    .navbar{
+        display: none;
+    }
+    .responsiveNav{
+        display: block;
+        height: auto;
+    }
+    
+    .responsiveNav ul li{
+        display: block;
+        margin-bottom: 0.5em; 
+        
+        
+        text-align: center;
+        width: 100%;
+    }
+    .navbar.responsiveNav a{
+        display: block;
+    }
+}
+
+/* ///////////////////////////////// end of responsive link  */
+
+
+
+    
+
